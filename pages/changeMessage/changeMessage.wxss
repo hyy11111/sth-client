@@ -1,0 +1,45 @@
+.head{
+  width: 100%;
+  height: 150rpx;
+}
+.item{
+  display: flex;
+  width: 60%;
+  margin-top: 70rpx;
+  margin-left: 20%;
+}
+.item-name{
+  font-size: 35rpx;
+  width: 35%;
+ padding-left: 10rpx;
+}
+.item-value{
+  color: #9d9d9d;
+  font-size: 35rpx;
+  width: 70%;
+  border-bottom: 1rpx solid #9d9d9d;
+  padding-left: 20rpx;
+}
+radio{
+  transform:scale(0.7);
+}
+.sex-value-f{
+  font-size: 35rpx;
+  margin-right: 90rpx;
+}
+.sex-value-m{
+  font-size: 35rpx;
+}
+.item-day{
+  font-size: 35rpx;
+  color: #9d9d9d;
+}
+.submit{
+  width: 25%;
+  height: 80rpx;
+  position: absolute;
+  bottom: 150rpx;
+  left: 37.5%;
+  font-size: 32rpx;
+  background: #fcf5da;
+}

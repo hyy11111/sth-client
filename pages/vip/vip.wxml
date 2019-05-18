@@ -1,0 +1,32 @@
+<view>
+<view class='heard'>
+<text class='heard-name'>头像</text>
+<image src="{{userInfo.avatarUrl}}" class='heard-image'></image>
+</view>
+<view class='username'data-type='昵称' data-name="username" data-value="{{myMessge.userName}}">
+<text class='username-name'>我的昵称</text>
+<text class='username-text'>{{myMessage.userName}}</text>
+</view>
+<view class='username' data-type='性别' data-name="sex" data-value="{{myMessage.sex}}">
+<text class='username-name'>我的性别</text>
+<text class='username-text'>{{sex}}</text>
+</view>
+<view class='vip' data-type='生日' data-name="birth" data-value="{{myMessage.birthday}}">
+<text class='username-name'>我的生日</text>
+<text class='username-text'>{{birthday}}</text>
+</view>
+<view class='username'data-name="cardnumber">
+<text class='username-name'>会员卡号</text>
+<text class='username-text'>{{myMessage.cardId}}</text>
+</view>
+<view class='username'data-name="cardlevel">
+<text class='username-name'>会员等级</text>
+<text class='username-text'>{{myMessage.cardLevel}}</text>
+</view>
+<view class='username' data-type='绑定账号' data-name="phonenumber" data-value="{{myMessage.phoneNumber}}">
+<text class='username-name'>绑定账号</text>
+<text class='username-text'>{{myMessage.phoneNumber}}</text>
+</view>
+
+<button form-type="submit" class='submit' bindtap='change' data-value='{{myMessage}}'>修改信息</button>
+</view>

@@ -1,0 +1,14 @@
+<view class='shop'>
+<image src='{{shopSrc}}' class='shop-image'></image>
+<view class='shop-name'>{{shopName}}</view>
+</view>
+<view class='assess-star'>    
+<view class='star-wrap'>      
+<view class='star-item' wx:for="{{stars}}" wx:key="" style='background:url("{{item.flag==1?item.blackImg:item.lightImg}}") no-repeat top;background-size:100%;' data-index="{{index}}" bindtap='starClick'>
+</view>    
+</view>
+</view>
+<view>
+<textarea class='comment' placeholder='商家需要你的评价哦~' bindblur='getComment'></textarea>
+</view>
+<button class='submit' bindtap='submit'>提交</button>

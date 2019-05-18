@@ -1,0 +1,9 @@
+<template name="sort_list">
+  <view class="sort-list">
+      <view class="sort"
+      bindtap="onOverallTag">{{sortSelected}}
+      <image src="/pages/images/down.png" 
+      style="width:20rpx;height:20rpx;"></image></view>
+      <view class="sort" bindtap='recommend'>猜你喜欢</view>
+  </view>
+</template>

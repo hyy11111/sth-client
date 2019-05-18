@@ -1,0 +1,80 @@
+<import src = "../common/sort_list.wxml"/>
+<view class="mask"
+hidden="{{mask1Hidden}}" bindtap="mask1Cancel">
+  <view class='sort-list-1'>
+  <text class='sort-list-text'>综合排序</text>
+  </view>
+  <view class="overall-sort-list">
+    <block wx:for="{{sortList}}" wx:key="">
+    <view class="overall-sort" data-index="{{index}}" 
+    bindtap="sortSelected">{{item.sort}}</view>
+    </block> 
+  </view>
+</view>
+<scroll-view bindscrolltolower="lower" 
+class="scroll-restaurants-list" 
+scroll-y="true" 
+style="height:100%">
+  <view class="heard">
+    <!-- <navigator url="/pages/location/location"> -->
+      <view class="heard-location">
+        <image src="/pages/images/location.png" 
+        class="heard-location-icon"/>
+        <text class="heard-location-text">{{weather.city.data}}</text>
+      </view>
+    <!-- </navigator> -->
+    <view class="heard-search">
+      <image src="/pages/images/search.png" class="heard-search-icon"/>
+      <input placeholder='搜索折扣商家或商圈~' placeholder-class="heard-search-text" class='heard-search-input' bindblur='search'></input>
+    </view>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}"  
+           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true" class="swiper">  
+         <block wx:for="{{imgUrls}}">  
+           <swiper-item>  
+              <navigator url="{{item.link}}" hover-class="navigator-hover">  
+               <image src="{{item.url}}" class="slide-image" />  
+              </navigator>  
+           </swiper-item>  
+         </block>  
+ </swiper>  
+  <swiper class="categoryList">
+    <block wx:for="{{categoryList}}" wx:key="">
+    <swiper-item>
+    <block wx:for="{{item}}" wx:key="index">
+      <view class="category-info" data-name="{{index}}" bindtap='turnPage' data-value = '{{item.name}}'>
+        <image src="{{item.src}}" 
+        class="category-image"></image>
+        <view class="category-text">{{item.name}}</view>
+      </view>
+    </block>
+    </swiper-item>
+    </block>
+  </swiper>
+  <view class="header-title">附近商家</view>
+  <template is="sort_list" data="{{selected,sortSelected}}"/>
+    <view class="restaurantsList">
+    <block wx:for="{{restaurant}}" wx:key="index">
+      <navigator url="/pages/menu/menu?shopId={{item.id}}">
+        <view class="restaurants-list">
+          <view class="restaurants-info-image">
+            <image src="{{item.src}}" class="restaurants-image"/>
+          </view>
+          <view class="restaurants-info">
+            <view class="restaurants-info-name">{{item.shop_name}}</view>
+            <view class="restaurants-info-rating">
+              <view   class='score'>
+              <image  wx:for="{{allScore[index]}}" wx:key="" src='{{item.src}}' class='star'/>
+          </view> 
+          </view>
+            <view class='restaurants-info-three'>
+              <text class='restaurants-info-rating-sales' decode="{{true}}">销量&nbsp;&nbsp;&nbsp;{{item.sales}}</text>
+              <view class='restaurants-distribution'>{{item.distance}}</view>
+            </view>
+</view>
+        
+       </view>
+      </navigator>
+    </block>
+  </view>
+</scroll-view>

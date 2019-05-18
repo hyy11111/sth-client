@@ -1,0 +1,40 @@
+<import src = "../common/sort_list.wxml"/>
+
+<view class="mask"
+hidden="{{mask1Hidden}}" bindtap="mask1Cancel">
+  <view class='sort-list-1'>
+  <text class='sort-list-text'>综合排序</text>
+  </view>
+  <view class="overall-sort-list">
+    <block wx:for="{{sortList}}" wx:key="">
+    <view class="overall-sort" data-index="{{index}}" 
+    bindtap="sortSelected">{{item.sort}}</view>
+    </block> 
+  </view>
+</view>
+<template is="sort_list" data="{{selected,sortSelected}}"/>
+ <view class="restaurantsList" wx:if="{{restaurant}}">
+    <block wx:for="{{restaurant}}" wx:key="index">
+      <navigator url="/pages/menu/menu?shopId={{item.id}}">
+        <view class="restaurants-list">
+          <view class="restaurants-info-image">
+            <image src="{{item.src}}" class="restaurants-image"/>
+          </view>
+          <view class="restaurants-info">
+            <view class="restaurants-info-name">{{item.shop_name}}</view>
+            <view class="restaurants-info-rating">
+              <view   class='score'>
+              <image  wx:for="{{allScore[index]}}" wx:key="" src='{{item.src}}' class='star'/>
+          </view> 
+          </view>
+            <view class='restaurants-info-three'>
+              <text class='restaurants-info-rating-sales' decode="{{true}}">销量&nbsp;&nbsp;&nbsp;{{item.sales}}</text>
+              <view class='restaurants-distribution'>{{item.distance}}</view>
+            </view>
+</view>
+        
+       </view>
+      </navigator>
+    </block>
+  </view>
+  <view class='no-collection' wx:else>暂时还没有该类商家哦~</view>

@@ -1,0 +1,47 @@
+.shop{
+  display: flex;
+}
+.shop-image{
+  width: 110rpx;
+  height: 110rpx;
+  margin-left: 8%;
+  margin-top: 40rpx;
+}
+.shop-name{
+  font-size: 35rpx;
+  margin-left: 30rpx;
+  margin-top: 90rpx;
+  color: #9d9d9d;
+}
+.assess-star {  
+  margin-top: 10rpx;
+  margin-left: 6%;
+} 
+.star-wrap {  
+  /* width: 50vw;  
+  margin: 10rpx auto 10rpx auto; */
+} 
+.star-item {  
+  display: inline-block;  
+  height: 70rpx;  
+  width: 70rpx;
+  margin-right: 20rpx;  
+  margin-top: 10rpx;
+} 
+.comment{
+  width: 76%;
+  margin-left: 8%;
+  margin-top: 20rpx;
+  background:#deefef;
+  padding: 30rpx;
+  font-size: 35rpx;
+  height: 300rpx;
+}
+.submit{
+  width: 25%;
+  height: 80rpx;
+  margin-right: 10%;
+  margin-top: 50rpx;
+  font-size: 32rpx;
+  background: #fcf5da;
+}

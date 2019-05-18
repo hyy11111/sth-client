@@ -1,0 +1,57 @@
+.goods-list{
+  font-size: 25rpx;
+  display: flex;
+  width: 100%;
+  padding: 10rpx 0;   
+  border-bottom: 1rpx solid #ECECEC;
+  color: #6D6D6D;
+  justify-content: space-between;
+}
+.comment-list{
+  font-size: 25rpx;
+  display: flex;
+  margin-top: 10rpx;
+  width: 100%;
+  color: #6D6D6D;
+  justify-content: space-between;
+}
+.comment-info{
+  flex: 1;
+}
+.comment-info-name{
+  margin-top: 25rpx;
+}
+.comment-info-rating-stars{
+  color: #FFD161;
+  width: 130rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+}
+.comment-info-time{
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+}
+.comment-info-text{
+  color: black;
+  font-size: 30rpx;
+  width:500rpx;
+  margin-left: 120rpx;
+}
+.boder{
+  width: 100%;
+  height: 1rpx;
+  background: #ececec;
+  margin-top: 20rpx;
+}
+.head-image{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 20rpx;
+}
+.star{
+  width: 18rpx;
+  height:18rpx;
+  margin-right: 8rpx;
+  margin-top: 28rpx;
+}
+

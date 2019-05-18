@@ -1,0 +1,26 @@
+
+<view class="collectionList" wx:if='{{collection}}'>
+    <block  wx:for="{{collection}}" wx:key="index">
+      <navigator url="/pages/menu/menu?shopId={{item.shopId}}">
+        <view class="collection-list">
+          <view class="collection-info-image">
+            <image src="{{item.src}}" class="collection-image"/>
+          </view>
+          <view class="collection-info">
+            <view class="collection-info-name">{{item.name}}</view>
+            <view class="collection-info-rating">
+             <view   class='score'>
+              <image  wx:for="{{allScore[index]}}" wx:key="" src='{{item.src}}' class='star'/>
+          </view>
+           </view>
+            <view class='collection-info-three'>
+              <text class='collection-info-rating-sales' decode="{{true}}">折扣&nbsp;&nbsp;&nbsp;{{item.cut}}</text>
+              <view class='collection-distribution'>{{item.distance}}</view>
+            </view>
+        </view>
+        </view>
+      
+      </navigator>
+    </block>
+  </view>
+  <view class='no-collection' wx:else>你还没有收藏商户哦~</view>

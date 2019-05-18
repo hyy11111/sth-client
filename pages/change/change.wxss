@@ -1,0 +1,45 @@
+page{
+  background: #ececec;
+}
+.phone-number{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 150rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #bebebe;
+}
+.password{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 80rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #bebebe;
+}
+.code-info{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 30rpx;
+  display: flex;
+}
+.code{
+  width: 50%;
+  margin-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #bebebe;
+}
+.getCode{
+  width: 70%;
+  margin-left: 10%;
+  font-size: 30rpx;
+}
+.submit{
+  width: 25%;
+  height: 80rpx;
+  margin-top: 60rpx;
+  justify-content: center;
+  font-size: 32rpx;
+  background: #fcf5da;
+}

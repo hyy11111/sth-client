@@ -1,0 +1,63 @@
+page{
+  background: #ececec;
+}
+.phone-number{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 150rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #bebebe;
+}
+.password{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 80rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #bebebe;
+}
+.code-info{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 30rpx;
+  display: flex;
+}
+.code{
+  width: 50%;
+  margin-top: 30rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  border-bottom: 1rpx solid #bebebe;
+}
+.getCode{
+  width: 70%;
+  margin-left: 10%;
+  font-size: 30rpx;
+}
+.button-info{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 100rpx;
+  display: flex;
+}
+.login{
+  width: 40%;
+  height: 90rpx;
+  margin-left: 30%;
+  font-size: 32rpx;
+  background: #fcf5da;
+}
+.register{
+  width: 30%;
+  height: 70rpx;
+  margin-left: 20%;
+  font-size: 28rpx;
+  background: #fcf5da;
+}
+.result{
+  color: red;
+  font-size: 30rpx;
+  margin-top: 100rpx;
+  margin-left: 16%;
+}

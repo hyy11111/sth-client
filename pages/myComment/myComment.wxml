@@ -1,0 +1,20 @@
+<view class='goodsList' wx:if='{{commentList}}'>
+        <block wx:for="{{commentList}}" wx:key="index">
+          <view class='comment-list'>
+          <view>
+          <image src="{{item.src}}" class='head-image'/>
+          </view>
+          <view class='comment-info'>
+            <view class='comment-info-name'>{{item.shopName}}</view>
+            <!-- <view class='comment-info-rating-stars'>★ ★ ★ ★</view> -->
+            <view   class='score'>
+              <image  wx:for="{{allScore[index]}}" wx:key="" src='{{item.src}}' class='star'/>
+          </view>
+          </view>
+          <view class='comment-info-time'>{{item.datetime}}</view>
+          </view>
+          <view class='comment-info-text'>{{item.comment}}</view>
+          <view class='boder'></view>
+        </block>
+      </view>
+<view class='no-collection' wx:else>你还没有评论过商户哦~</view>

@@ -1,0 +1,14 @@
+<view>
+<view class='result'>{{result}}</view>
+<input placeholder='请输入帐号' class='phone-number' bindblur='getPhone'/>
+<view class='code-info'>
+<input class='code' placeholder='验证码' bindblur='getCode'></input>
+<button class='getCode' bindtap='countDown' wx:if='{{countDownNum==0}}'>重新获取验证码</button>
+<button class='getCode' bindtap='countDown' wx:else>获取验证码({{countDownNum}})</button>
+</view>
+<input placeholder='请输入密码' class='password' password='true' bindblur='getPassword'/>
+<view class='button-info'>
+<!-- <button class='login' form-type='submit' bindtap='login'>登录</button> -->
+<button class='register' form-type='submit'  bindtap='register'>注册</button>
+</view>
+</view>

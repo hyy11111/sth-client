@@ -1,0 +1,5 @@
+<block wx:for="{{activity}}" wx:key="">
+<view class='img-info'>
+<image src="{{item.activityImg}}" data-value = "{{item.id}}" class='img' bindtap='getDetail'></image>
+</view>
+</block>

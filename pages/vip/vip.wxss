@@ -1,0 +1,61 @@
+.heard{
+  width: 100%;
+  height: 180rpx;
+  border-bottom: 1rpx solid #ECECEC;
+}
+.heard-name{
+  position: absolute;
+  margin-top: 60rpx;
+  margin-left: 30rpx;
+  color: #4f4f4f;
+  font-size: 35rpx;
+}
+.heard-image{
+  width: 130rpx;
+  height: 130rpx;
+  margin-left: 78%;
+  margin-top: 25rpx;
+  position: absolute;
+}
+.username{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ECECEC;
+}
+.vip{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 10rpx solid #ECECEC;
+}
+.username-name{
+  position: absolute;
+  margin-left: 30rpx;
+  margin-top: 25rpx;
+  color: #4f4f4f;
+  font-size: 35rpx;
+}
+.username-text{
+  position: absolute;
+  width: 93%;
+  text-align: right;
+  color: #9d9d9d;
+  margin-top: 28rpx;
+  font-size: 30rpx;
+}
+.username-text-change{
+  position: absolute;
+  width: 98%;
+  text-align: right;
+  color: #9d9d9d;
+  margin-top: 28rpx;
+  font-size: 30rpx;
+}
+.submit{
+  width: 25%;
+  height: 80rpx;
+  position: absolute;
+  bottom: 150rpx;
+  left: 37.5%;
+  font-size: 32rpx;
+  background: #fcf5da;
+}

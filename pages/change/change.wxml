@@ -1,0 +1,10 @@
+<view>
+<form bindsubmit='change'>
+<input placeholder='请输入原始密码' class='phone-number' name='password1'/>
+<input placeholder='请输入修改密码' class='password' password='true' name='password2'/>
+<input placeholder='请再次输入修改密码' class='password' password='true' name='password3'/>
+<view class='button-info'>
+<button class='submit' form-type='submit'>提交</button>
+</view>
+</form>
+</view>

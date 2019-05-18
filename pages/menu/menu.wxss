@@ -1,0 +1,212 @@
+.container{
+  height: 100%;
+  /* background: #008c8c; */
+}
+.header{
+  display: flex;
+  justify-content: space-around;
+}
+.header .title{
+  height: 70rpx;
+  width: 180rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  text-align: center;
+}
+.header .title.selected{
+  border-bottom: 7rpx solid #008c8c;
+  font-weight: 600;
+}
+.swiper{
+  height: 1180rpx;
+  width: 100%;
+}
+/* .swiper-item{
+  padding: 10rpx;
+} */
+#orderPage{
+  display: flex;
+  height: auto;
+}
+#commentPage{
+  height: auto;
+}
+#restaurantPage{
+ height: auto;
+}
+.orderPage-sideBar{
+  width: 150rpx;
+  height: 1130rpx;
+  background: #F4F4F4;
+}
+.goods-list{
+  font-size: 25rpx;
+  display: flex;
+  width: 100%;
+  padding: 10rpx 0;   
+  border-bottom: 1rpx solid #ECECEC;
+  color: #6D6D6D;
+  justify-content: space-between;
+}
+.goods-info-name{
+  color: black;
+  font-size: 30rpx;
+  width:500rpx;
+  margin-top: 5rpx;
+  /* margin-bottom: 10rpx; */
+}
+.image{
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 30rpx;
+}
+.goods-image{
+  width: 45%;
+  height: 350rpx;
+  margin-left: 3.3%;
+  margin-top: 15rpx;
+  border-radius: 20rpx;
+}
+.goods-info{
+  margin: 15rpx;
+  margin-left: 20rpx;
+  flex: 1;
+}
+.goods-info-cut{
+  margin-top: 40rpx;
+  display: flex;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.head-image{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 20rpx;
+}
+.comment-list{
+  font-size: 25rpx;
+  display: flex;
+  margin-top: 10rpx;
+  width: 100%;
+  color: #6D6D6D;
+  justify-content: space-between;
+}
+.comment-info{
+  flex: 1;
+}
+.comment-info-name{
+  margin-top: 25rpx;
+}
+.comment-info-rating-stars{
+  color: #FFD161;
+  width: 130rpx;
+  height: 50rpx;
+  margin-top: 15rpx;
+}
+.comment-info-time{
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+}
+.comment-info-text{
+  color: black;
+  font-size: 30rpx;
+  width:500rpx;
+  margin-left: 120rpx;
+}
+.boder{
+  width: 100%;
+  height: 1rpx;
+  background: #ececec;
+  margin-top: 20rpx;
+}
+.shop-cut{
+  border-bottom: 10rpx solid #ECECEC;
+  padding: 20rpx;
+  padding-left: 30rpx;
+  padding-top: 30rpx;
+}
+.shop-cut-name{
+  font-size: 35rpx;
+}
+.shop-cut-text{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #6D6D6D;
+  white-space: pre-wrap
+}
+.shop-time{
+  padding: 20rpx;
+  padding-left: 30rpx;
+  border-bottom: 1rpx solid #ECECEC;
+  width: 100%;
+  display: flex;
+}
+.shop-time-name{
+  width: 40%;
+  font-size: 35rpx;
+}
+.shop-time-text{
+  color: #6D6D6D;
+  width: 60%;
+  text-align: right;
+  margin-right: 8%;
+  font-size: 30rpx;
+}
+.shop-phone{
+  padding: 20rpx;
+  padding-left: 30rpx;
+  border-bottom: 10rpx solid #ECECEC;
+  width: 100%;
+  display: flex;
+}
+.shop-image{
+  padding-top: 30rpx;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 300rpx;
+}
+.shop-image-show{
+  width: 100%;
+  height: 100%;
+}
+.collection{
+  width: 25%;
+  height: 80rpx;
+  position: absolute;
+  bottom: 150rpx;
+  left: 20%;
+  font-size: 32rpx;
+  background: #fcf5da;
+}
+.comment{
+  width: 25%;
+  height: 80rpx;
+  position: absolute;
+  bottom: 150rpx;
+  left: 55%;
+  font-size: 32rpx;
+  background: #fcf5da;
+}
+.score{
+  display: flex;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.star{
+  width: 18rpx;
+  height:18rpx;
+}
+.no-collection{
+  margin: auto;
+  width: 48%;
+  margin-top: 200rpx;
+  font-size: 35rpx;
+  color: #9d9d9d
+}
+.no-comment{
+  margin: auto;
+  width: 35%;
+  margin-top: 200rpx;
+  font-size: 35rpx;
+  color: #9d9d9d
+}

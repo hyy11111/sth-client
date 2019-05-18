@@ -1,0 +1,62 @@
+<!-- <view class="container">
+  <view class="header">
+    <view class="userImg"></view>
+    <view class="userName">tzc123</view>
+  </view>
+  <view class="content">
+    <view class="coupon">美团红包</view>
+    <view class="address">我的收货地址</view>
+    <view class="tel">客服电话: 101-097-77</view>
+    <view class="signOut">退出账号</view>
+  </view>
+</view> -->
+<view class='head'>
+  <view class='heard-info'>
+    <image src='{{userInfo.avatarUrl}}' class='heard-info-image'></image>
+    <text class='login-in' bindtap="login">{{login}}</text>
+    <text class='register' bindtap='register'>{{register}}</text>
+    <text class='username'>{{username}}</text>
+    <view class='change' bindtap='change'data-value='{{change}}'>{{change}}</view>
+  </view>
+  
+</view>
+<view class='my-service'>
+<view class='my-services-text'>
+我的服务
+</view>
+<view>
+<swiper class="myServiceList">
+    <block wx:for="{{myServiceList}}" wx:key="">
+    <swiper-item>
+    <block wx:for="{{item}}" wx:key="">
+      <view class="my-service-info" data-name="{{item.url}}" bindtap='turnPage'>
+        <image src="{{item.src}}" 
+        class="my-service-image"></image>
+        <view class="my-service-text">{{item.name}}</view>
+      </view>
+    </block>
+    </swiper-item>
+    </block>
+  </swiper>
+</view>
+</view>
+<view class='other-service'>
+<view class='my-services-text'>
+其他服务
+</view>
+<view>
+<swiper class="myServiceList">
+    <block wx:for="{{otherServiceList}}" wx:key="">
+    <swiper-item>
+    <block wx:for="{{item}}" wx:key="">
+      <view class="my-service-info" data-name="{{item.url}}" bindtap='turnPage'>
+        <image src="{{item.src}}" 
+        class="my-service-image"></image>
+        <view class="my-service-text">{{item.name}}</view>
+      </view>
+    </block>
+    </swiper-item>
+    </block>
+  </swiper>
+</view>
+</view>

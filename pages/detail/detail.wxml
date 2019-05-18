@@ -1,0 +1,10 @@
+<view class='title'>会员特权</view>
+<text class='top' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;舜通汇会员可享受旗下所有合作商户折扣活动，不定期推出商户大力度活动。</text>
+<!-- <text class='n1' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;1.帕帝浩斯体验台抽出3张，免座位费，啤酒或洋酒2选一，中奖用户需提前预约</text>
+<text class='n1' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;2.凤王府成都火锅购59元锅底券（锅底券可用十次）抽奖活动抽出10张100元抵用券（抵用券满280可用</text>
+<text class='n1' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;3.预售当天创始会员免费送全网视频年会员包含爱奇艺、优酷、腾讯会员、芒果会员、pptv等等</text>
+<text class='n1' decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;4.银泰杰士健身房免费送一张周卡</text> -->
+<view class='button-info' wx:if="{{flag}}">
+<button class='login' form-type='submit' bindtap='login'>登录</button>
+<button class='register' form-type='submit'  bindtap='register'>注册</button>
+</view>

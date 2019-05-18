@@ -1,0 +1,67 @@
+<import src = "../common/orderPage.wxml"/>
+<import src = "../common/commentPage.wxml"/>
+<view class="container" disable-scroll="true">
+  <view class="header">
+    <block wx:for="{{swiperTitle}}" wx:key="">
+      <view class="title {{index==currentPage?'selected':''}}" data-index="{{index}}"
+      bindtap="turnPage">{{item.text}}</view>
+    </block> 
+  </view>
+  <swiper class='swiper' current="{{currentPage}}" bindchange="turnTitle">
+   <swiper-item id="restaurantPage">
+      <view class='shop-image'>
+      <image src="{{menu.src}}" class='shop-image-show'></image>
+      </view>
+      <view class='shop-cut'>
+      <view class='shop-cut-name'>优惠详情</view>
+      <text class='shop-cut-text' >{{menu.detail}}</text>
+      </view>
+      <view class='shop-time'>
+      <text class='shop-time-name'>营业时间</text>
+      <text class='shop-time-text'>{{menu.openTime}}</text>
+      </view>
+      <view class='shop-time'>
+      <text class='shop-time-name'>商家地址</text>
+      <text class='shop-time-text'>{{menu.shopAddress}}</text>
+      </view>
+      <view class='shop-phone'>
+      <text class='shop-time-name'>商家电话</text>
+      <text class='shop-time-text'>{{menu.phonenumber}}</text>
+      </view>
+      <button class='collection' bindtap='collection'>{{collection}}</button>
+      <button class='comment' bindtap='comment'>评价</button>
+    </swiper-item>
+    <swiper-item id="orderPage" class="swiper-item">
+    <view class="image" wx:if="{{shopImage}}">
+      <block wx:for="{{shopImage}}" wx:key="">
+            <image src="{{item.shopSrc}}" class="goods-image"/>
+            <!-- <image src="/pages/images/first.png" class="goods-image"/> -->
+
+    </block>
+    </view>
+    <view class='no-collection' wx:else>商家还没有上传图片哦~</view>
+    </swiper-item>
+    <swiper-item id="commentPage">
+      <view class='goodsList' wx:if="{{comment}}">
+        <block wx:for="{{comment}}" wx:key="">
+          <view class='comment-list'>
+          <view>
+          <image src="{{item.img_src}}" class='head-image'/>
+          </view>
+          <view class='comment-info'>
+            <view class='comment-info-name'>{{item.user_name}}</view>
+            <view   class='score'>
+              <image  wx:for="{{allScore[index]}}" wx:key="" src='{{item.src}}' class='star'/>
+          </view>
+          </view>
+          <view class='comment-info-time'>{{item.time}}</view>
+          </view>
+          <view class='comment-info-text'>{{item.comment}}</view>
+          <view class='boder'></view>
+        </block>
+      </view>
+      <view class='no-comment' wx:else>还没有人评论哦~</view>
+    </swiper-item>
+   
+  </swiper>
+</view>

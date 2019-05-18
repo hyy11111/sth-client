@@ -1,0 +1,64 @@
+{
+  "pages": [
+    
+    "pages/home/home",
+    "pages/menu/menu",
+    "pages/my/my",
+    "pages/order/order",
+    "pages/type/type",
+    "pages/feedback/feedback",
+    "pages/collection/collection",
+    "pages/vip/vip",
+    "pages/change/change",
+    "pages/login/login",
+    "pages/changeMessage/changeMessage",
+    "pages/comment/comment",
+    "pages/myComment/myComment",
+    "pages/search/search",
+    "pages/register/register",
+    "pages/pay/pay",
+    "pages/detail/detail",
+    "pages/activity/activity",
+    "pages/activityDetail/activityDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "舜通汇",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#272636",
+    "selectedColor":"#008c8c",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/home-selected.png",
+        "color": "white",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "iconPath": "pages/images/activity.png",
+        "selectedIconPath": "pages/images/activity-selected.png",
+        "color": "white",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "pages/images/my.jpg",
+        "selectedIconPath": "pages/images/my-selected.jpg",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "同意获取定位"
+    }
+  }
+}

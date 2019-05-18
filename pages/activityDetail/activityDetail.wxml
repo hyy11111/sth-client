@@ -1,0 +1,2 @@
+<view>{{activity.activityName}}</view>
+<button class='join' wx:if="{{join}}" bindtap="join">{{join}}</button>

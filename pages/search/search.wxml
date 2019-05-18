@@ -1,0 +1,26 @@
+
+<view class="collectionList" wx:if='{{searchList}}'>
+    <block  wx:for="{{searchList}}" wx:key="index">
+      <navigator url="/pages/menu/menu?shopName={{item.name}}">
+        <view class="collection-list">
+          <view class="collection-info-image">
+            <image src="{{item.src}}" class="collection-image"/>
+          </view>
+          <view class="collection-info">
+            <view class="collection-info-name">{{item.shop_name}}</view>
+            <view class="collection-info-rating">
+             <view   class='score'>
+              <image  wx:for="{{allScore[index]}}" wx:key="" src='{{item.src}}' class='star'/>
+          </view>
+           </view>
+            <view class='collection-info-three'>
+              <text class='collection-info-rating-sales' decode="{{true}}">销量&nbsp;&nbsp;&nbsp;{{item.sales}}</text>
+              <view class='collection-distribution'>{{item.distance}}</view>
+            </view>
+        </view>
+        </view>
+      
+      </navigator>
+    </block>
+  </view>
+  <view class='no-collection' wx:else>暂时没有你想搜索的商户哦~</view>

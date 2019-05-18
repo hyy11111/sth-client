@@ -1,0 +1,46 @@
+page{
+  background: #ececec
+}
+.title{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 60rpx;
+  letter-spacing: 15rpx;
+}
+.top{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40rpx;
+  font-size: 30rpx;
+  letter-spacing: 5rpx;
+}
+.n1{
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  letter-spacing: 5rpx;
+}
+.button-info{
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 100rpx;
+  display: flex;
+}
+.login{
+  width: 30%;
+  height: 70rpx;
+  margin-left: 8%;
+  font-size: 28rpx;
+  background: #fcf5da;
+}
+.register{
+  width: 30%;
+  height: 70rpx;
+  margin-left: 20%;
+  font-size: 28rpx;
+  background: #fcf5da;
+}

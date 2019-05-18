@@ -1,0 +1,24 @@
+<view class='head'></view>
+<view>
+<form bindsubmit='change'>
+<view class='item'>
+<view class='item-name'>昵称</view>
+<input value='{{oldMessage.userName}}' name='username' class='item-value'/>
+</view>
+<view class='item'>
+<radio-group bindchange='sex' name='sex'>
+<lable class='sex-value-f'>
+<radio value='0' checked='true' />男
+</lable>
+<label class='sex-value-m'>
+<radio value='1'/>女
+</label>
+</radio-group>
+</view>
+<view class='item'>
+<view class='item-name'>生日</view>
+<input class='item-value' value='{{birthday}}' name='birthday' placeholder='1900-01-01'/>
+</view>
+<button form-type='submit' class='submit'>提交</button>
+</form>
+</view>
